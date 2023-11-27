@@ -39,7 +39,7 @@ const HomePage = () => {
               </div>
               {/* <p className="btn1"><Link to ="/TodayMenuFirebase" >もっと見る</Link></p> */}
               <button className='btn1'>
-                <a href='/TodayMenuFirebase'>もっと見る</a>
+                <a href='/menu'>もっと見る</a>
               </button>
             </div>
 

@@ -2,14 +2,12 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import Navigation from '../components/Navigation'
 // import Chatbot from "react-chatbot-kit";
 // import config, { MessageParser, ActionProvider } from "./ChatConfig";
 // import 'react-chatbot-kit/build/main.css';
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div>
 
@@ -38,7 +36,7 @@ const HomePage = () => {
               </div>
               {/* <p className="btn1"><Link to ="/TodayMenuFirebase" >もっと見る</Link></p> */}
               <button className='btn1'>
-                <Link href = '/TodayMenu'>もっと見る</Link>
+                <Link href = '/menu'>もっと見る</Link>
               </button>
             </div>
 
@@ -108,4 +106,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default Home
