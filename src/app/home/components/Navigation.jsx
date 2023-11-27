@@ -16,18 +16,22 @@ const Navigation = () => {
     //     </li>
     //   </ul>
     // </nav>
-        <nav id="menubar">
-        <ul>
-          <li>HOME<span>ホーム</span></li>
-          <li>SIGN UP<span>サインアップ</span></li>
-          <li>SAT<span>セット販売の組み合わせ</span></li>
-          <li>
-            
-              CONTACT<span>お問い合わせ</span>
-        
-          </li>
-        </ul>
-      </nav>
+    <nav id='menubar'>
+      <ul>
+        <li>
+          HOME<span>ホーム</span>
+        </li>
+        <li>
+          SIGN UP<span>サインアップ</span>
+        </li>
+        <li>
+          SAT<span>セット販売の組み合わせ</span>
+        </li>
+        <li>
+          CONTACT<span>お問い合わせ</span>
+        </li>
+      </ul>
+    </nav>
   )
 }
 
