@@ -2,27 +2,26 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import Header from './components/Header'
-import Navigation from './components/Navigation'
+import Header from '../components/Header'
+import Navigation from '../components/Navigation'
+import Footer from '../components/Footer'
 // import Chatbot from "react-chatbot-kit";
 // import config, { MessageParser, ActionProvider } from "./ChatConfig";
 // import 'react-chatbot-kit/build/main.css';
 
 const HomePage = () => {
   return (
-    <div className='container'>
-      <Header />
-
-      <div className='slide'>
-        <aside id='mainimg'>
-          <Image src='/images/interior1.jpeg' height={500} width={500} alt='猫は最高に可愛い' />
-        </aside>
-        {/*<!--スライドショー-->*/}
-      </div>
-      <Navigation />
+    <div>
 
       <div id='contents'>
+        <div className='slide'>
+          
+          <Image className = 'slide1' src='/images/interior1.jpeg' height={500} width={500} alt='猫は最高に可愛い' />
+      
+      
+        </div>
+        <Navigation />
+
         <section>
           <h2>
             TOPICS<span>トピックス</span>
@@ -39,7 +38,7 @@ const HomePage = () => {
               </div>
               {/* <p className="btn1"><Link to ="/TodayMenuFirebase" >もっと見る</Link></p> */}
               <button className='btn1'>
-                <a href='/TodayMenuFirebase'>もっと見る</a>
+                <Link href = '/TodayMenu'>もっと見る</Link>
               </button>
             </div>
 
@@ -71,7 +70,6 @@ const HomePage = () => {
                   駐車場は2つ用意がございます。3台まで駐車可能です。イベントの際や、混雑が予想される場合は有料駐車場をご利用ください。
                 </p>
               </div>
-              {/* <p className="btn1"><Link to="/Parking">もっと見る</Link> </p> */}
               <button className='btn1'>
                 <Link href='/parking'>もっと見る</Link>
               </button>
