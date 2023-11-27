@@ -2,9 +2,9 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
 // import Chatbot from "react-chatbot-kit";
 // import config, { MessageParser, ActionProvider } from "./ChatConfig";
 // import 'react-chatbot-kit/build/main.css';
