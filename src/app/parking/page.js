@@ -85,7 +85,7 @@ const HomePage = () => {
                         <p>駐車場は2つ用意がございます。3台まで駐車可能です。イベントの際や、混雑が予想される場合は有料駐車場をご利用ください。</p>
                         </div>
                         {/* <p className="btn1"><Link to="/Parking">もっと見る</Link> </p> */}
-                        <button className="btn1"><Link href="/parking">もっと見る</Link></button>
+                        <button className="btn1"><a href="/Parking">もっと見る</a></button>
                     </div>
 
 
