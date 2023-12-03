@@ -2,23 +2,23 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import Navigation from '../components/Navigation'
 // import Chatbot from "react-chatbot-kit";
 // import config, { MessageParser, ActionProvider } from "./ChatConfig";
 // import 'react-chatbot-kit/build/main.css';
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div>
-
       <div id='contents'>
         <div className='slide'>
-          
-          <Image className = 'slide1' src='/images/interior1.jpeg' height={500} width={500} alt='猫は最高に可愛い' />
-      
-      
+          <Image
+            className='slide1'
+            src='/images/interior1.jpeg'
+            height={500}
+            width={500}
+            alt='猫は最高に可愛い'
+          />
         </div>
         <Navigation />
 
@@ -38,7 +38,11 @@ const HomePage = () => {
               </div>
               {/* <p className="btn1"><Link to ="/TodayMenuFirebase" >もっと見る</Link></p> */}
               <button className='btn1'>
-                <Link href = '/TodayMenu'>もっと見る</Link>
+                {/* <Link href = '/menu'>もっと見る</Link> */}
+                {/* TODO: 場当たり的に前のサイトのリンクを貼っているので、後で直す */}
+                <Link href='https://chervil-hp-release-122f7761f275.herokuapp.com/TodayMenuFirebase'>
+                  もっと見る
+                </Link>
               </button>
             </div>
 
@@ -71,7 +75,11 @@ const HomePage = () => {
                 </p>
               </div>
               <button className='btn1'>
-                <Link href='/parking'>もっと見る</Link>
+                {/* <Link href='/Parking'>もっと見る</Link> */}
+                {/* TODO：場当たり的に前のサイトのリンクを貼っているので、後で直す */}
+                <Link href='https://chervil-hp-release-122f7761f275.herokuapp.com/Parking'>
+                  もっと見る
+                </Link>
               </button>
             </div>
           </div>
@@ -108,4 +116,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default Home
