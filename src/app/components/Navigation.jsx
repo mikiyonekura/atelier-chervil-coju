@@ -17,7 +17,9 @@ const Navigation = () => {
           </Link>
         </li>
         <li>
-          <Link href='/Sat'>
+          {/* <Link href='/Sat'> */}
+          {/* TODO: 場当たり的に作ったページなので、後で消す */}
+          <Link href='https://chervil-hp-release-122f7761f275.herokuapp.com/Sat'>
             SAT<span>セット販売の組み合わせ</span>
           </Link>
         </li>

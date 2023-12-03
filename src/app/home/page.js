@@ -10,13 +10,15 @@ import Navigation from '../components/Navigation'
 const Home = () => {
   return (
     <div>
-
       <div id='contents'>
         <div className='slide'>
-          
-          <Image className = 'slide1' src='/images/interior1.jpeg' height={500} width={500} alt='猫は最高に可愛い' />
-      
-      
+          <Image
+            className='slide1'
+            src='/images/interior1.jpeg'
+            height={500}
+            width={500}
+            alt='猫は最高に可愛い'
+          />
         </div>
         <Navigation />
 
@@ -36,7 +38,11 @@ const Home = () => {
               </div>
               {/* <p className="btn1"><Link to ="/TodayMenuFirebase" >もっと見る</Link></p> */}
               <button className='btn1'>
-                <Link href = '/menu'>もっと見る</Link>
+                {/* <Link href = '/menu'>もっと見る</Link> */}
+                {/* TODO: 場当たり的に前のサイトのリンクを貼っているので、後で直す */}
+                <Link href='https://chervil-hp-release-122f7761f275.herokuapp.com/TodayMenuFirebase'>
+                  もっと見る
+                </Link>
               </button>
             </div>
 
@@ -69,7 +75,11 @@ const Home = () => {
                 </p>
               </div>
               <button className='btn1'>
-                <Link href='/parking'>もっと見る</Link>
+                {/* <Link href='/Parking'>もっと見る</Link> */}
+                {/* TODO：場当たり的に前のサイトのリンクを貼っているので、後で直す */}
+                <Link href='https://chervil-hp-release-122f7761f275.herokuapp.com/Parking'>
+                  もっと見る
+                </Link>
               </button>
             </div>
           </div>

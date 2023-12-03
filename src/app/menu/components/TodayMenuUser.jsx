@@ -1,18 +1,14 @@
+import { Grid } from '@mui/material'
 import React from 'react'
-import { Grid } from '@mui/material';
 // firebase
 // import  Db  from '../firebase/Db';
 
 const TodayMenu = () => {
-
   return (
-    
     <div>
-      
       <h3>本日のメニュー</h3>
 
-      <Grid container direction="column">
-        
+      <Grid container direction='column'>
         {/* <Grid item>
           <Link to ="/TodayMenuAd">
           <Button  variant="contained" style={{ height: "40px" }} endIcon={<AdminPanelSettingsIcon />}>
@@ -22,18 +18,15 @@ const TodayMenu = () => {
         </Grid> */}
 
         <Grid item container>
-          
           <Grid item sm={2} />
-            <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={8}>
             {/* <Content2 taskList={taskList}/> */}
-              <Db mode='user'/>
-            </Grid>
+            {/* <Db mode='user' /> */}
+          </Grid>
           <Grid item sm={2} />
         </Grid>
       </Grid>
-
     </div>
-    
   )
 }
 
