@@ -9,7 +9,7 @@ const TodayMenu = () => {
     
     <div>
       
-      <h3>本日のメニューはこちらになります</h3>
+      <h3>本日のメニュー</h3>
 
       <Grid container direction="column">
         
